@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Checkout</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20221220191326">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+<body>
+	<div class="wrapper">
+		<header class="header" data-scroll-show="200" data-lp>
+			<div class="header__container">
+				<a href="#" class="header__logo">
+					<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="logo"></picture>
+				</a>
+				<div class="header__menu menu">
+
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="" class="menu__link">Watches</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Eyewear</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Accessories</a></li>
+							<li class="menu__item"><a href="" class="menu__link">News</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__actions actions">
+					<a data-popup="#form-search" href="#" class="actions__search _icon-search" type="submit"></a>
+					<a class="actions__login _icon-user" data-da=".menu__body, 400" href="#">Log In</a>
+					<a class="actions__shop _icon-shope" href="#"></a>
+					<button type="button" class="icon-menu"><span></span></button>
+				</div>
+
+			</div>
+		</header>
+		<main class="checkout">
+			<div class="checkout__container">
+				<div class="checkout__pay-steps pay-steps">
+					<div class="pay-steps__items">
+						<div class="pay-steps__item item-pay-steps">
+
+							<div class="item-pay-steps__wrapper">
+								<div class="item-pay-steps__icon">
+									<div class="item-pay-steps__icon-photo  item-pay-steps__icon-photo_checkout item-pay-steps__icon-photo_active-step-icon"></div>
+								</div>
+								<div class="item-pay-steps__body item-pay-steps__body_active-step">
+									<div class="item-pay-steps__step">1.</div>
+									<div class="item-pay-steps__name-step">Checkout</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="pay-steps__item item-pay-steps">
+							<div class="item-pay-steps__wrapper">
+								<div class="item-pay-steps__icon">
+									<div class="item-pay-steps__icon-photo  item-pay-steps__icon-photo_payment"></div>
+								</div>
+								<div class="item-pay-steps__body  _active-step">
+									<div class="item-pay-steps__step">2.</div>
+									<div class="item-pay-steps__name-step">Payment</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="pay-steps__item item-pay-steps">
+							<div class="item-pay-steps__wrapper">
+								<div class="item-pay-steps__icon">
+									<div class="item-pay-steps__icon-photo  item-pay-steps__icon-photo_confirmation"></div>
+								</div>
+								<div class="item-pay-steps__body  _active-step">
+									<div class="item-pay-steps__step">3.</div>
+									<div class="item-pay-steps__name-step">Confirmation</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="checkout__body">
+					<div class="checkout__column">
+						<div class="checkout__order order">
+							<h2 class="order__title title-order">Detail Order</h2>
+							<div class="order__info info-order">
+								<div class="info-order__body">
+									<div class="info-order__column">
+										<p class="info-order__lable">Subtotal</p>
+										<p class="info-order__subtotal">Rp 2.152.000</p>
+
+
+									</div>
+									<div class="info-order__column">
+										<p class="info-order__lable">Shipping Cost</p>
+										<p class="info-order__subtotal">Rp 500.000</p>
+
+									</div>
+
+									<div class="info-order__column">
+										<p class="info-order__lable">Promo Code</p>
+										<p class="info-order__subtotal">INDONESIA</p>
+
+									</div>
+									<div class="info-order__column">
+										<p class="info-order__lable">Packaging</p>
+										<p class="info-order__subtotal">Rp 50.000</p>
+									</div>
+								</div>
+								<div class="order__footer footer-order">
+									<div class="footer-order__column">
+										<p class="footer-order__total">Grand Total</p>
+										<p class="footer-order__price">Rp 2.702.000</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="checkout__column">
+						<div class="checkout__address address-checkout">
+
+							<form data-dev class="address-checkout__form form" method="post" action="#">
+								<div class="form__wrapper">
+									<h2 class="form__title title-order">Billing Address</h2>
+									<div class="form__line">
+										<label class="form__lable" for="fullname">Fullname</label>
+										<input autocomplete="off" id="fullname" type="text" name="form[fullname]" data-error="Ошибка" placeholder="Ex: Rasyidin Arsyad Nasution" class="input">
+									</div>
+									<div class="form__line">
+										<label class="form__lable" for="email">Email Address</label>
+										<input autocomplete="off" id="email" type="email" name="form[email]" data-error="Ошибка" placeholder="Ex: rasyid.arsyad@gmail.com" class="input">
+									</div>
+									<div class="form__line">
+										<label class="form__lable" for="phone">Phone Number</label>
+										<input autocomplete="off" id="phone" type="number" name="form[number]" data-error="Ошибка" placeholder="Ex: 089111888999" class="input">
+									</div>
+									<div class="form__line">
+										<label class="form__lable" for="address">Shipping Address</label>
+										<input autocomplete="off" id="address" type="text" name="form[shipingAddress]" data-error="Ошибка" placeholder="Ex: Patriot Street Number 666, Ngaklik, Sleman" class="input">
+									</div>
+									<div class="form__line">
+										<label class="form__lable" for="country">Country</label>
+										<select name="form[country]" id="country" class="form__select">
+											<option value="USA" selected>United State of America (USA)</option>
+											<option value="China">China</option>
+											<option value="Ukraine">Ukraine</option>
+											<option value="Poland">Poland</option>
+										</select>
+									</div>
+									<div class="form__line">
+										<label class="form__lable" for="state/province">State/Province</label>
+										<select data-scroll name="form[state/province]" id="state/province" class="form__select">
+											<option value="California" selected>California</option>
+											<option value="Texas">Texas</option>
+											<option value="Arizona">Arizona</option>
+											<option value="Florida">Florida</option>
+											<option value="Arkansas">Arkansas</option>
+											<option value="Montana">Montana</option>
+										</select>
+									</div>
+									<div class="form__row">
+										<div class="form__column">
+											<div class="form__line">
+												<label class="form__lable" for="city">City</label>
+												<select data-scroll name="form[city]" id="city" class="form__select">
+													<option value="California" selected>San Francisco</option>
+													<option value="Texas">Chicago</option>
+													<option value="Arizona">Houston</option>
+													<option value="Florida">Phoenix</option>
+													<option value="Arkansas">Miami</option>
+													<option value="California" selected>San Francisco</option>
+													<option value="Texas">Chicago</option>
+													<option value="Arizona">Houston</option>
+													<option value="Florida">Phoenix</option>
+													<option value="Arkansas">Miami</option>
+													<option value="California" selected>San Francisco</option>
+													<option value="Texas">Chicago</option>
+													<option value="Arizona">Houston</option>
+													<option value="Florida">Phoenix</option>
+													<option value="Arkansas">Miami</option>
+												</select>
+											</div>
+										</div>
+										<div class="form__column form__column_zip-code">
+											<div class="form__line">
+												<label class="form__lable" for="zip-code">Zip Code</label>
+												<input autocomplete="off" id="zip-code" type="text" name="form[zipCode]" data-error="Ошибка" placeholder="Ex: 94024" class="input">
+											</div>
+										</div>
+									</div>
+									<div class="form__line">
+										<label class="form__lable" for="logistics">Choose Courier</label>
+										<select data-scroll name="form[logistics]" id="logistics" class="form__select">
+											<option value="DHL" selected>DHL</option>
+											<option value="FedEx">FedEx</option>
+											<option value="SNCF">SNCF</option>
+											<option value="UPS">UPS </option>
+										</select>
+									</div>
+
+								</div>
+								<div class="form__buttons">
+									<a href="#" class="form__button button-transparent button-transparent_big">Continue Shopping</a>
+									<button type="submit" class="form__button button button_big">Place My Order</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+
+	<footer data-spollers="768,max" class="footer">
+		<div class="footer__container">
+			<div class="footer__column footer__column_main-column">
+				<a href="" class="footer__logo">
+					<picture><source srcset="img/footer-logo.webp" type="image/webp"><img src="img/footer-logo.png" alt="logo matoa"></picture>
+				</a>
+				<div class="footer__blocks">
+					<div class="footer__block">
+						<h4 class="footer__lable label-footer">Address</h4>
+						<div class="footer__text">
+							<p>Store & Office</p>
+							<p>Jl. Setrasari Kulon III, No. 10-12,</p>
+							<p>Sukarasa, Sukasari, Bandung,</p>
+							<p>Jawa Barat, Indonesia 40152</p>
+						</div>
+					</div>
+					<div class="footer__block">
+						<h4 class="footer__lable label-footer">Office Hour</h4>
+						<div class="footer__text">
+							<p>Monday - Sunday</p>
+							<p>10.00 - 18.00</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="footer__column">
+				<button type="button" data-spoller class="footer__title title-footer _icon-select-arrow">Get in touch</button>
+				<div class="footer__body">
+					<div class="footer__contacts contacts-footer">
+						<h4 class="contacts-footer__label label-footer">Phone</h4>
+						<a href="tel:02220277564" class="contacts-footer__value">022-20277564</a>
+						<h4 class="contacts-footer__label label-footer">Service Center</h4>
+						<a href="tel:08112338899" class="contacts-footer__value">0811-233-8899</a>
+						<h4 class="contacts-footer__label label-footer">Customer Service</h4>
+						<a href="tel:08112359988" class="contacts-footer__value">0811-235-9988</a>
+					</div>
+					<div class="footer__socials social-icon">
+						<a href="#" class="social-icon__link _icon-facebook"></a>
+						<a href="#" class="social-icon__link _icon-instagram"></a>
+						<a href="#" class="social-icon__link _icon-twitter"></a>
+						<a href="#" class="social-icon__link _icon-youtube"></a>
+					</div>
+				</div>
+
+			</div>
+			<div class="footer__column">
+				<button type="button" data-spoller class="footer__title title-footer _icon-select-arrow">Useful Link</button>
+				<div class="footer__body">
+					<ul class="footer__list list-footer">
+						<li class="list-footer__item">
+							<a href="" class="list-footer__link">Warranty & Complaints</a>
+						</li>
+						<li class="list-footer__item">
+							<a href="" class="list-footer__link">Order & Shipping</a>
+						</li>
+						<li class="list-footer__item">
+							<a href="" class="list-footer__link">Tracking Order</a>
+						</li>
+						<li class="list-footer__item">
+							<a href="" class="list-footer__link">About Us</a>
+						</li>
+						<li class="list-footer__item">
+							<a href="" class="list-footer__link">Repair</a>
+						</li>
+						<li class="list-footer__item">
+							<a href="" class="list-footer__link">Terms</a>
+						</li>
+						<li class="list-footer__item">
+							<a href="" class="list-footer__link">FAQ</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer__column">
+				<button type="button" data-spoller class="footer__title title-footer _icon-select-arrow">Campaign</button>
+				<div class="footer__body">
+					<ul class="footer__list list-footer">
+						<li class="list-footer__item">
+							<a href="" class="list-footer__link">Mengenal Arti Cukup</a>
+						</li>
+						<li class="list-footer__item">
+							<a href="" class="list-footer__link">Tell Your Difference</a>
+						</li>
+						<li class="list-footer__item">
+							<a href="" class="list-footer__link">Waykambas</a>
+						</li>
+						<li class="list-footer__item">
+							<a href="" class="list-footer__link">Rebrand</a>
+						</li>
+						<li class="list-footer__item">
+							<a href="" class="list-footer__link">Gallery</a>
+						</li>
+						<li class="list-footer__item">
+							<a href="" class="list-footer__link">Singo</a>
+						</li>
+						<li class="list-footer__item">
+							<a href="" class="list-footer__link">Rakai</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	</div>
+	<div id="form-search" aria-hidden="true" class="popup popup_search">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"><span></span></button>
+				<div class="popup__title title">Search</div>
+				<div class="popup__form">
+					<form action="#" class="form-search">
+						<div class="form-search__line">
+							<input autocomplete="off" data-required type="text" name="form[search]" data-error="fill in this field" placeholder="Search..." class="form-search__input input input_search">
+						</div>
+						<button type="submit" class="form-search__button form-search__button_search"><span class="_icon-search"></span></button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20221220191326"></script>
+</body>
+
+</html>
